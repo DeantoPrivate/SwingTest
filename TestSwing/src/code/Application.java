@@ -1,7 +1,6 @@
-/**
+package code; /**
  * Created by deanto on 27.12.13.
  */
-import javax.swing.*;
 
 public class Application {
     public void init() {

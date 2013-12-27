@@ -1,5 +1,6 @@
-package syntax_constructor;
+package code.syntax_constructor;
 import javax.swing.*;
+import code.IVersion;
 /**
  * Created by deanto on 27.12.13.
  * В этом классе заключена вся функциональность синтаксического конструктора
@@ -25,5 +26,9 @@ public class SyntaxConstructor implements IVersion {
     public void setVisible()
     {
         _frame.setVisible(true);
+    }
+    public String getSpecification()
+    {
+        return _name;
     }
 }
