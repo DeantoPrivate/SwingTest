@@ -1,21 +1,24 @@
 package code.Net;
 
-import java.util.ArrayList;
-import java.util.HashMap;
-import java.util.Hashtable;
+import java.util.*;
 
 /**
  * Created by deanto on 27.12.13.
  */
-public class Token {
-    private String _name;
-    public String getName(){return _name;}
-    public void setName(String name){_name = name;}
+public class Token extends NetObj {
 
-    private HashMap<String,String> _stringValues;
-    private Hashtable<String,Integer> _inregerValues;
+    public Token(int id)
+    {
+       super(id);
+        _stringValues=new Hashtable<String, String>();
+        _integerValues = new Hashtable<String, Integer>();
+    }
 
-    
+    private Hashtable<String,String> _stringValues;
+    private Hashtable<String,Integer> _integerValues;
+
+    public Hashtable<String,String> getStringValues(){return _stringValues;}
+    public Hashtable<String,Integer> getIntegerValues(){return _integerValues;}
 
 }
 
